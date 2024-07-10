@@ -31,4 +31,6 @@ if Email:
             st.image("OIP.jpeg",width=200)
         else :
             st.write("The email is:", spam_ham )
+            st.image("do-not-spam-sign-vector-11313202.jpg",width=200)
+
 
