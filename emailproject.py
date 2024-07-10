@@ -5,8 +5,8 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
 
 
-model = pickle.load(open(r"C:\Users\anees\Data Analysis\Machine Learing\ML jupyter problems\model.pkl","rb"))
-with open(r"C:\Users\anees\Data Analysis\Machine Learing\ML jupyter problems\model1.pkl","rb") as f:
+model = pickle.load(open("model.pkl","rb"))
+with open("model1.pkl","rb") as f:
     bow = pickle.load(f)
           
 st.header("EMAIL SPAM OR HAM")
@@ -28,13 +28,7 @@ if Email:
         if spam_ham == 'spam' :
             
             st.write("The email is:", spam_ham )
-            st.image(r"C:\Users\anees\OneDrive\Pictures\Downloads\OIP.jpeg",width=200)
+            st.image("OIP.jpeg",width=200)
         else :
             st.write("The email is:", spam_ham )
 
-
-# if spam_ham == Email:
-#     #if Email == "spam":
-#     st.image(r"C:\Users\anees\OneDrive\Pictures\Downloads\OIP.jpeg",width=200)
-#else:
-    #print("No")
